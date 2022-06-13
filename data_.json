@@ -1,0 +1,456 @@
+[
+{
+    "model": "main.question",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "content": "띵동~! 제주 여행에서 쓸 수 있는 무료 이용권 하나를 선물받았네요. 어떤 티켓이 좋을까요?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "content": "설렘을 안고 도착한 공항. 친구를 만나야 하는데 휴대폰 배터리가 없다! 어떡하지?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "content": "가려고 했던 곳이 문을 닫았다. 새로운 계획을 세워보자!"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 4,
+    "fields": {
+        "number": 4,
+        "content": "게스트하우스에서 새로운 사람들을 만났다! 내일 일정을 함께하자는 제안을 받았는데.."
+    }
+},
+{
+    "model": "main.question",
+    "pk": 5,
+    "fields": {
+        "number": 5,
+        "content": "여행 마지막 날. 어떤 기념품을 사갈까?"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 6,
+    "fields": {
+        "number": 6,
+        "content": "다음에 제주 또 오면 이건 꼭 해봐야지~!"
+    }
+},
+{
+    "model": "main.question",
+    "pk": 7,
+    "fields": {
+        "number": 7,
+        "content": "여행을 마치고 집에 도착! 성공적이었던 이번 제주여행. 가장 기억에 남는 추억은?"
+    }
+},
+    
+{
+    "model": "main.choice",
+    "pk": 1,
+    "fields": {
+        "content": "귤 따기 체험 티켓",
+        "developer": 1,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 2,
+    "fields": {
+        "content": "박물관 입장 티켓",
+        "developer": 2,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 3,
+    "fields": {
+        "content": "제주도 레저 체험권",
+        "developer": 3,
+        "question": 1
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 4,
+    "fields": {
+        "content": "어떻게든 되겠지! 이것도 추억이야~",
+        "developer": 1,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 5,
+    "fields": {
+        "content": ">캐리어에서 준비한 보조배터리를 꺼낸다",
+        "developer": 2,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 6,
+    "fields": {
+        "content": "도착했다고 연락해야 하는데.. 미안한 마음이 앞선다",
+        "developer": 3,
+        "question": 2
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 7,
+    "fields": {
+        "content": "돌고래 보러 가기",
+        "developer": 1,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 8,
+    "fields": {
+        "content": "제주 감성 가득한 원데이 클래스를 알아본다",
+        "developer": 2,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 9,
+    "fields": {
+        "content": "서핑, 스쿠버다이빙 등 액티비티 체험에 도전한다",
+        "developer": 3,
+        "question": 3
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 10,
+    "fields": {
+        "content": "내일 애월 쪽 둘러보려 하는데, 같이 가실래요?",
+        "developer": 1,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 11,
+    "fields": {
+        "content": "죄송해요.. 전 다른 일정이 있어서요ㅠㅠ",
+        "developer": 2,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 12,
+    "fields": {
+        "content": "좋아요! 저도 동행해도 되나요?",
+        "developer": 3,
+        "question": 4
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 13,
+    "fields": {
+        "content": "제주 인싸템인 귤귀도리와 귤모자",
+        "developer": 1,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 14,
+    "fields": {
+        "content": "여행을 기록하기 위한 문구템(제주 감성 스티커, 엽서 등)",
+        "developer": 2,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 15,
+    "fields": {
+        "content": "친구들 취향저격 기념품(제주 캔들, 초콜릿 등)",
+        "developer": 3,
+        "question": 5
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 16,
+    "fields": {
+        "content": "사려니 숲 에코 힐링 체험",
+        "developer": 1,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 17,
+    "fields": {
+        "content": "제주 문화유산 탐방 프로그램",
+        "developer": 2,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 18,
+    "fields": {
+        "content": "이국적인 카페 or 펍 투어",
+        "developer": 3,
+        "question": 6
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 19,
+    "fields": {
+        "content": "석양을 바라보며 행복했던 저녁 시간",
+        "developer": 1,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 20,
+    "fields": {
+        "content": "제주도 박물관 도장깨기",
+        "developer": 2,
+        "question": 7
+    }
+},
+{
+    "model": "main.choice",
+    "pk": 21,
+    "fields": {
+        "content": "다양한 어트랙션과 레이싱 테마파크",
+        "developer": 3,
+        "question": 7
+    }
+},
+
+{
+    "model": "main.developer",
+    "pk": 1,
+    "fields": {
+        "name": "경험 만수르형",
+        "count": 16,
+        "data": {
+            "title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!",
+            "imageone": "img/lang/1_geum.png",
+            "imageonename": "금능해수욕장",
+            "features": [
+                "제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ",
+                "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ",
+                "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."
+            ],
+            "imagestwo": "img/lang/1_bi.png",
+            "imagestwoname": "비자림",
+            "descriptions": [
+                "천 년의 세월이 녹아든 신비로움 가득한 비자림은 500~800년생 비자나무들이 자생하는 세계적으로도 희귀한 장소다.",
+                "벼락 맞은 나무부터 긴 세월이 느껴지는 아름드리 나무까지 다양한 비자나무를 만날 수 있다. 비자나무 외에도 단풍나무, 후박나무 등 다양한 수종이 숲을 메우고 있다.",
+                "덕분에 숲 입구에서부터 기분 좋은 향기가 퍼져 나온다. 피톤치드를 머금은 상쾌한 산책길을 따라 자박자박 걷다 보면 자연스레 산림욕의 매력에 빠지게 된다."
+            ],
+            "imagesthree": "img/lang/1_jusang.png",
+            "imagesthreename": "대포해안주상절리",
+            "explanations": [
+                "주상절리는 마치 예리한 조각 칼로 섬세하게 깎아낸 듯한 4~6각형 형태의 기둥으로, 현무암질 용암류에 나타나는 수직 절리를 말한다. 두꺼운 용암이 화구로부터 흘러나와 급격히 식으면서 발생하는 수축 작용의 결과로 형성되었다.",
+                "마치 계단을 쌓은 듯 겹겹이 서 있는 육모꼴의 돌 기둥이 병풍처럼 둘러 쳐져 있어 자연의 신비로움을 만끽할 수 있다. 그 기둥에 부딪히는 파도 또한 마음을 뺏기는 볼거리인데, 심할 때는 높이 20m 이상 치솟는 ‘쇼’가 펼쳐지기도 해서 보는 이의 넋을 빼앗는다.",
+                "중문·대포해안 주상절리대는 높이가 30~40m, 폭이 약 1㎞ 정도로 우리나라 최대 규모를 자랑하며, 제주도 천연기념물 제443호로 지정돼 있다."
+            ]
+            
+            /*
+            "languages": {
+                "list": [
+                    {
+                        "name": "python",
+                        "img": "img/lang/python.png"
+                    },
+                    {
+                        "name": "Java",
+                        "img": "img/lang/java.png"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "img": "img/lang/js.png"
+                    }
+                ],
+                "comments": [
+                    "python을 배우신 후에는, Django 또는 Flask 웹 프레임워크를 배우시면 됩니다.",
+                    "Java를 배우신 후에는, Spring과 Spring Boot 웹 프레임워크를 공부하시면 좋습니다.",
+                    "JavaScript를 배우신 경우 Node.js라는 런타임 환경과 그 위에서 동작하는 Express.js 등의 웹 프레임워크를 공부하시면 됩니다."
+                ]
+            },
+            "lectures": [
+                {
+                    "name": "Python 부트캠프",
+                    "img": "img/lec/lec_python_bootcamp.png",
+                    "url": "https://www.inflearn.com/course/파이썬-부트캠프"
+                },
+                {
+                    "name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)",
+                    "img": "img/lec/lec_web_fullstack.png",
+                    "url": "https://www.inflearn.com/course/web_fullstack"
+                },
+                {
+                    "name": "Django Mini project BEST 3",
+                    "img": "img/lec/lec_django_mini.png",
+                    "url": "https://www.inflearn.com/course/Django-미니프로젝트강좌"
+                }
+            ]
+            */
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 2,
+    "fields": {
+        "name": "경험 만수르형",
+        "count": 16,
+        "data": {
+            "title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!",
+            "imageone": "img/lang/1_geum.png",
+            "imageonename": "금능해수욕장",
+            "features": [
+                "제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ",
+                "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ",
+                "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."
+            ],
+            "imagestwo": "img/lang/1_bi.png",
+            "imagestwoname": "비자림",
+            "descriptions": [
+                "천 년의 세월이 녹아든 신비로움 가득한 비자림은 500~800년생 비자나무들이 자생하는 세계적으로도 희귀한 장소다.",
+                "벼락 맞은 나무부터 긴 세월이 느껴지는 아름드리 나무까지 다양한 비자나무를 만날 수 있다. 비자나무 외에도 단풍나무, 후박나무 등 다양한 수종이 숲을 메우고 있다.",
+                "덕분에 숲 입구에서부터 기분 좋은 향기가 퍼져 나온다. 피톤치드를 머금은 상쾌한 산책길을 따라 자박자박 걷다 보면 자연스레 산림욕의 매력에 빠지게 된다."
+            ],
+            "imagesthree": "img/lang/1_jusang.png",
+            "imagesthreename": "대포해안주상절리",
+            "explanations": [
+                "주상절리는 마치 예리한 조각 칼로 섬세하게 깎아낸 듯한 4~6각형 형태의 기둥으로, 현무암질 용암류에 나타나는 수직 절리를 말한다. 두꺼운 용암이 화구로부터 흘러나와 급격히 식으면서 발생하는 수축 작용의 결과로 형성되었다.",
+                "마치 계단을 쌓은 듯 겹겹이 서 있는 육모꼴의 돌 기둥이 병풍처럼 둘러 쳐져 있어 자연의 신비로움을 만끽할 수 있다. 그 기둥에 부딪히는 파도 또한 마음을 뺏기는 볼거리인데, 심할 때는 높이 20m 이상 치솟는 ‘쇼’가 펼쳐지기도 해서 보는 이의 넋을 빼앗는다.",
+                "중문·대포해안 주상절리대는 높이가 30~40m, 폭이 약 1㎞ 정도로 우리나라 최대 규모를 자랑하며, 제주도 천연기념물 제443호로 지정돼 있다."
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 3,
+    "fields": {
+        "name": "경험 만수르형",
+        "count": 16,
+        "data": {
+            "title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!",
+            "imageone": "img/lang/1_geum.png",
+            "imageonename": "금능해수욕장",
+            "features": [
+                "제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ",
+                "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ",
+                "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."
+            ],
+            "imagestwo": "img/lang/1_bi.png",
+            "imagestwoname": "비자림",
+            "descriptions": [
+                "천 년의 세월이 녹아든 신비로움 가득한 비자림은 500~800년생 비자나무들이 자생하는 세계적으로도 희귀한 장소다.",
+                "벼락 맞은 나무부터 긴 세월이 느껴지는 아름드리 나무까지 다양한 비자나무를 만날 수 있다. 비자나무 외에도 단풍나무, 후박나무 등 다양한 수종이 숲을 메우고 있다.",
+                "덕분에 숲 입구에서부터 기분 좋은 향기가 퍼져 나온다. 피톤치드를 머금은 상쾌한 산책길을 따라 자박자박 걷다 보면 자연스레 산림욕의 매력에 빠지게 된다."
+            ],
+            "imagesthree": "img/lang/1_jusang.png",
+            "imagesthreename": "대포해안주상절리",
+            "explanations": [
+                "주상절리는 마치 예리한 조각 칼로 섬세하게 깎아낸 듯한 4~6각형 형태의 기둥으로, 현무암질 용암류에 나타나는 수직 절리를 말한다. 두꺼운 용암이 화구로부터 흘러나와 급격히 식으면서 발생하는 수축 작용의 결과로 형성되었다.",
+                "마치 계단을 쌓은 듯 겹겹이 서 있는 육모꼴의 돌 기둥이 병풍처럼 둘러 쳐져 있어 자연의 신비로움을 만끽할 수 있다. 그 기둥에 부딪히는 파도 또한 마음을 뺏기는 볼거리인데, 심할 때는 높이 20m 이상 치솟는 ‘쇼’가 펼쳐지기도 해서 보는 이의 넋을 빼앗는다.",
+                "중문·대포해안 주상절리대는 높이가 30~40m, 폭이 약 1㎞ 정도로 우리나라 최대 규모를 자랑하며, 제주도 천연기념물 제443호로 지정돼 있다."
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 4,
+    "fields": {
+        "name": "경험 만수르형",
+        "count": 16,
+        "data": {
+            "title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!",
+            "imageone": "img/lang/1_geum.png",
+            "imageonename": "금능해수욕장",
+            "features": [
+                "제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ",
+                "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ",
+                "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."
+            ],
+            "imagestwo": "img/lang/1_bi.png",
+            "imagestwoname": "비자림",
+            "descriptions": [
+                "천 년의 세월이 녹아든 신비로움 가득한 비자림은 500~800년생 비자나무들이 자생하는 세계적으로도 희귀한 장소다.",
+                "벼락 맞은 나무부터 긴 세월이 느껴지는 아름드리 나무까지 다양한 비자나무를 만날 수 있다. 비자나무 외에도 단풍나무, 후박나무 등 다양한 수종이 숲을 메우고 있다.",
+                "덕분에 숲 입구에서부터 기분 좋은 향기가 퍼져 나온다. 피톤치드를 머금은 상쾌한 산책길을 따라 자박자박 걷다 보면 자연스레 산림욕의 매력에 빠지게 된다."
+            ],
+            "imagesthree": "img/lang/1_jusang.png",
+            "imagesthreename": "대포해안주상절리",
+            "explanations": [
+                "주상절리는 마치 예리한 조각 칼로 섬세하게 깎아낸 듯한 4~6각형 형태의 기둥으로, 현무암질 용암류에 나타나는 수직 절리를 말한다. 두꺼운 용암이 화구로부터 흘러나와 급격히 식으면서 발생하는 수축 작용의 결과로 형성되었다.",
+                "마치 계단을 쌓은 듯 겹겹이 서 있는 육모꼴의 돌 기둥이 병풍처럼 둘러 쳐져 있어 자연의 신비로움을 만끽할 수 있다. 그 기둥에 부딪히는 파도 또한 마음을 뺏기는 볼거리인데, 심할 때는 높이 20m 이상 치솟는 ‘쇼’가 펼쳐지기도 해서 보는 이의 넋을 빼앗는다.",
+                "중문·대포해안 주상절리대는 높이가 30~40m, 폭이 약 1㎞ 정도로 우리나라 최대 규모를 자랑하며, 제주도 천연기념물 제443호로 지정돼 있다."
+            ]
+        }
+    }
+},
+{
+    "model": "main.developer",
+    "pk": 5,
+    "fields": {
+        "name": "경험 만수르형",
+        "count": 16,
+        "data": {
+            "title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!",
+            "imageone": "img/lang/1_geum.png",
+            "imageonename": "금능해수욕장",
+            "features": [
+                "제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ",
+                "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ",
+                "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."
+            ],
+            "imagestwo": "img/lang/1_bi.png",
+            "imagestwoname": "비자림",
+            "descriptions": [
+                "천 년의 세월이 녹아든 신비로움 가득한 비자림은 500~800년생 비자나무들이 자생하는 세계적으로도 희귀한 장소다.",
+                "벼락 맞은 나무부터 긴 세월이 느껴지는 아름드리 나무까지 다양한 비자나무를 만날 수 있다. 비자나무 외에도 단풍나무, 후박나무 등 다양한 수종이 숲을 메우고 있다.",
+                "덕분에 숲 입구에서부터 기분 좋은 향기가 퍼져 나온다. 피톤치드를 머금은 상쾌한 산책길을 따라 자박자박 걷다 보면 자연스레 산림욕의 매력에 빠지게 된다."
+            ],
+            "imagesthree": "img/lang/1_jusang.png",
+            "imagesthreename": "대포해안주상절리",
+            "explanations": [
+                "주상절리는 마치 예리한 조각 칼로 섬세하게 깎아낸 듯한 4~6각형 형태의 기둥으로, 현무암질 용암류에 나타나는 수직 절리를 말한다. 두꺼운 용암이 화구로부터 흘러나와 급격히 식으면서 발생하는 수축 작용의 결과로 형성되었다.",
+                "마치 계단을 쌓은 듯 겹겹이 서 있는 육모꼴의 돌 기둥이 병풍처럼 둘러 쳐져 있어 자연의 신비로움을 만끽할 수 있다. 그 기둥에 부딪히는 파도 또한 마음을 뺏기는 볼거리인데, 심할 때는 높이 20m 이상 치솟는 ‘쇼’가 펼쳐지기도 해서 보는 이의 넋을 빼앗는다.",
+                "중문·대포해안 주상절리대는 높이가 30~40m, 폭이 약 1㎞ 정도로 우리나라 최대 규모를 자랑하며, 제주도 천연기념물 제443호로 지정돼 있다."
+            ]
+        }
+    }
+},
+
+]
+
+
+/*
+[{"model": "main.developer", "pk": 1, "fields": {"name": "경험 만수르형", "count": 16, "data": {"title": "여행 - 체험 = 0! 액티비티를 사랑하는 당신!", "images": "img/lang/1_geum.png", "features": ["제주시 한림읍에 위치한 금능해수욕장은 서쪽의 인기 명소인 협재해수욕장과 바로 이어져 있다. ", "파란 물감을 풀어놓은 것 같은 바다부터 생김새가 귀여운 비양도, 촉감이 보슬거리는 모래사장까지 이웃한 해변과 비슷한 풍경을 품고 있지만 그보다 사람이 붐비지 않아 여유로운 것이 매력이다. ", "더구나 주차장과 해변이 바로 연결되어 있어 짐을 옮길 때도 부담이 없고 새로 신축된 샤워실은 온수 샤워가 가능해 해수욕장 이용에 편리함을 갖췄다."], "descriptions": ["프론트 개발자가 사용자에게 보여지는 화면을 담당하는 개발자라면, 백엔드 개발자는 로그인, 추천 기능 등 서비스의 뒷부분 즉, 서버 설계를 담당하는 개발자입니다.", "클라이언트(사용자)와 데이터베이스(데이터가 모여있는 곳) 사이를 중계하는 서버를 개발합니다. 클라이언트가 요청하는 데이터를 가공하여 제공(예를 들어 넷플릭스에서 내가 원하는 영상 리스트업)하는 프로그램을 개발합니다."], "languages": {"list": [{"name": "python", "img": "img/lang/python.png"}, {"name": "Java", "img": "img/lang/java.png"}, {"name": "JavaScript", "img": "img/lang/js.png"}], "comments": ["python을 배우신 후에는, Django 또는 Flask 웹 프레임워크를 배우시면 됩니다.", "Java를 배우신 후에는, Spring과 Spring Boot 웹 프레임워크를 공부하시면 좋습니다.", "JavaScript를 배우신 경우 Node.js라는 런타임 환경과 그 위에서 동작하는 Express.js 등의 웹 프레임워크를 공부하시면 됩니다."]}, "lectures": [{"name": "Python 부트캠프", "img": "img/lec/lec_python_bootcamp.png", "url": "https://www.inflearn.com/course/파이썬-부트캠프"}, {"name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)", "img": "img/lec/lec_web_fullstack.png", "url": "https://www.inflearn.com/course/web_fullstack"}, {"name": "Django Mini project BEST 3", "img": "img/lec/lec_django_mini.png", "url": "https://www.inflearn.com/course/Django-미니프로젝트강좌"}]}}}, {"model": "main.developer", "pk": 2, "fields": {"name": "프론트엔드 개발자", "count": 12, "data": {"title": "예술적 감각이 뛰어난 당신은!", "features": ["내 눈으로 결과를 확인해야 함.  바로 바로 적용되는 화면에 성취감을 느낌.", "어렸을 때 한번쯤은 호그와트 들어가는 상상해보지 않나? 상상력이 풍부하고 새로운 도전을 즐기는 편임.", "은근히 완벽주의자 성향이 있어서 1px이라도 비뚤어지거나 대칭이 맞지 않으면 참을 수 없음.", "자유로운 영혼이지만 내가 지금 무엇을 해야하는지 정확히 알아야 함."], "descriptions": ["FE(Front-End)라고도 부르며, 웹이나 앱을 이용할 때 눈으로 보는 모든 화면들을 만드는 개발자를 의미합니다.", "반응형 웹이나 UI를 만들어야 하기 때문에 미적 감각이 필요합니다.", "웹 퍼블리셔와 프론트엔드 개발자는 공동의 영역을 공유합니다. 웹 퍼블리셔는 주로 HTML, CSS를 사용하여 화면을 설계합니다. 프론트엔드 개발자는 js, jQuery, 백엔드와의 연동 등 화면 설계와 동시에 화면 구조까지 살펴볼 수 있는 사람을 말합니다. 그러나 실무에서는 이 두 가지 직업군의 롤 모두를 수행하는 사람이 많습니다."], "languages": {"list": [{"name": "HTML", "img": "img/lang/html.png"}, {"name": "CSS", "img": "img/lang/css.png"}, {"name": "JavaScript", "img": "img/lang/js.png"}], "comments": ["HTML, CSS, JavaScript 웹을 구성하는 3요소 입니다! (얼마 전 Web Assembly가 추가되어 4요소가 되었지만 처음에는 3개만 배우셔도 충분합니다!)", "기본적인 내용이 숙지되었다면 CSS Animation, Media Query, Canvas, JSON parsing, Ajax, Node.js, jQuery를 공부해보세요!"]}, "lectures": [{"name": "HTML, CSS, JS, Python 30분 요약강좌", "img": "img/lec/lec_30minutes.png", "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약"}, {"name": "코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)", "img": "img/lec/lec_web_fullstack.png", "url": "https://www.inflearn.com/course/web_fullstack"}, {"name": "제주코딩베이스캠프 Code Festival: JavaScript 100제", "img": "img/lec/lec_js100.png", "url": "https://www.inflearn.com/course/제주코딩-자바스크립트-100제"}]}}}, {"model": "main.developer", "pk": 3, "fields": {"name": "데이터 분석과 인공지능", "count": 21, "data": {"title": "Data에서 인사이트를 발견할 수 있는 당신은!", "features": ["하루하루 계획을 세워야 함. 준비없이 갑작스럽게 해야 될 일이 생기는 것은 질색!", "효율적이고 합리적인 방식을 선호하는 타입. 자기전에 내일 어디갈지 뭐할지 다 정하고 자는 편.", "의사결정 시 나의 느낌보다는 다른 사람들의 의견들을 꼼꼼히 조사하는 편. 그래서 뭔가 결정하는 데 하루 종일 걸림."], "descriptions": ["데이터 분석은 정보에 대한 결론을 도출하기 위해 적합한 알고리즘과 통계기법을 적용해 패턴을 찾는 작업입니다.", "인공지능은 데이터 분석 기반으로 인간만이 할 수 있다고 생각했던 기능을 컴퓨터가 수행하는 것을 목표로 합니다.", "정보를 기반으로 의사결정을 지원하는 것을 목표로 하기 때문에 이해관계자가 잘 이해할 수 있도록 전달하는 것 또한 중요합니다.", "무엇을 해결하고자 하는지 명확하게 판단해야 하기 때문에 원하는 목적과 어떤 임팩트가 있는지 구체적으로 정의하는 것이 좋습니다."], "languages": {"list": [{"name": "Python", "img": "img/lang/python.png"}, {"name": "R", "img": "img/lang/r.png"}, {"name": "SAS", "img": "img/lang/sas.png"}], "comments": ["SAS, MATLAB, 사이킷런(Scikit-learn), 텐서플로우(TensorFlow), 파이토치(PyTorch) "]}, "lectures": [{"name": "30분 요약 강좌 시즌2 : Python 활용편", "img": "img/lec/lec_30minutes2.png", "url": "https://www.inflearn.com/course/제주코딩-웹개발-30분요약-시즌2"}, {"name": "제주 하간디 이신 데이터들 Python으로 몬딱 분석해불게", "img": "img/lec/lec_jeju_data.jpg", "url": "https://www.inflearn.com/course/제주코딩베이스캠프-파이썬-데이터분석"}, {"name": "캐글 데이터로 살펴보는 데이터분석 With Python and SAS", "img": "img/lec/lec_sas.png", "url": "https://www.inflearn.com/users/170213"}]}}}, {"model": "main.developer", "pk": 4, "fields": {"name": "정보보안", "count": 6, "data": {"title": "모든지 뚫고, 막을 수 있는 당신은!", "features": ["어떤 서비스가 만들어지기 전에 시큐어코딩이 이뤄지지 않으면 사상누각! 아무리 좋은 서비스라 하더라도 단번에 무너질 수 있어!", "그냥 웹페이지를 접속했을 뿐인데 나에겐 취약점이 너무나 많이 보인다! 이렇게 해도 뚫릴 것 같고, 저렇게 해도 뚫릴 것 같아.", "해커, 정의의 이름으로 너희들을 용납하지 않겠다!", "이미 완성품인데 괜히 분해해서 분석해 보고 싶음. 사실 그렇게 분해하다가 망가진 것도 있음...ㅎ"], "descriptions": ["정보보안은 보안 취약점을 찾아내어 문제를 해결하고 이를 악의적으로 이용하는 것을 방지하는 행위를 말합니다.", "기업 측면에서는 네트워크, 데이터베이스 등의 정보자산을 안전하게 보호하고, 일반 사용자 측면에서는 개인 정보 유출, 남용을 방지하는 역할을 담당한다."], "languages": {"list": [{"name": "C", "img": "img/lang/c.png"}, {"name": "Python", "img": "img/lang/python.png"}, {"name": "SQL", "img": "img/lang/sql.png"}], "comments": ["Linux, Windows 등의 운영체제"]}, "lectures": [{"name": "정보보안 패스파인더", "img": "img/lec/lec_pathfinder.png", "url": "https://www.inflearn.com/course/정보보안-패스파인더"}, {"name": "실습으로 배우는 SQL injection", "img": "img/lec/lec_sql.png", "url": "https://www.inflearn.com/users/170213"}]}}}, {"model": "main.developer", "pk": 5, "fields": {"name": "게임 개발", "count": 1, "data": {"title": "Game을 좋아하고, 상상하길 즐겨하는 당신은!", "features": ["뭐든 새로 나오면 한 번 경험해 봐야 직성이 풀림. 남들이 이거 해 봤냐고 물어보면 당연하지! 라고 답하는 편.", "남들과 똑같기를 거부한다! 창의적인 스타일, 항상 새로운 재미있는 것을 추구한다.", "밤새는 거 잘함. 해외에 나가도 시차적응이 필요없는 타입. 일이 오백만개 쌓여있어도 어찌저찌 마감기한 내에는 다 끝내는 편.", "게임을 좋아하지 않는데 게임 개발 유형이 나왔다고 놀라지 마세요! 요리를 먹는 것과 요리를 하는 것은 다르답니다."], "descriptions": ["게임 개발자는 컴퓨터 게임이나 비디오 게임을 개발하는 개발자를 말합니다.", "게임 프로그래머는 프로그래밍 언어 외에도 그래픽, 물리에 대한 이해를 바탕으로 가상세계를 구현하기 때문에 수학적, 물리적 지식이 필요합니다.", "게임 개발은 가장 예측하기 힘든 분야입니다. 내가 재밌어도 남들은 재미없어 할 수도 있어요. 재미라는 요소 자체가 주관적이기 때문이에요. 그렇기 때문에 트렌드를 잘 읽어야 하고, 변화에 빠르게 대응하기 위해 구조를 탄탄하게 잡으려는 노력을 해야합니다."], "languages": {"list": [{"name": "C#", "img": "img/lang/cs.png"}, {"name": "C++", "img": "img/lang/cpp.png"}, {"name": "Python", "img": "img/lang/python.png"}], "comments": ["유니티(Unity), 언리얼(Unreal) 등의 상용 게임 엔진과 DirectX, OpenGL 등의 그래픽 라이브러리도 함께 공부해보세요!"]}, "lectures": [{"name": "PyGame 어드벤쳐 : 위니브 월드를 수복하라!", "img": "img/lec/lec_pygame.png", "url": "https://www.inflearn.com/course/파이게임-어드벤쳐"}]}}}, {"model": "main.question", "pk": 1, "fields": {"number": 1, "content": "띵동~! 제주 여행에서 쓸 수 있는 무료 이용권 하나를 선물받았네요. 어떤 티켓이 좋을까요?"}}, {"model": "main.question", "pk": 2, "fields": {"number": 2, "content": "설렘을 안고 도착한 공항. 친구를 만나야 하는데 휴대폰 배터리가 없다! 어떡하지?"}}, {"model": "main.question", "pk": 3, "fields": {"number": 3, "content": "가려고 했던 곳이 문을 닫았다. 새로운 계획을 세워보자!"}}, {"model": "main.question", "pk": 4, "fields": {"number": 4, "content": "게스트하우스에서 새로운 사람들을 만났다! 내일 일정을 함께하자는 제안을 받았는데.."}}, {"model": "main.question", "pk": 5, "fields": {"number": 5, "content": "여행 마지막 날. 어떤 기념품을 사갈까?"}}, {"model": "main.question", "pk": 6, "fields": {"number": 6, "content": "다음에 제주 또 오면 이건 꼭 해봐야지~!"}}, {"model": "main.question", "pk": 7, "fields": {"number": 7, "content": "여행을 마치고 집에 도착! 성공적이었던 이번 제주여행. 가장 기억에 남는 추억은?"}}, {"model": "main.question", "pk": 11, "fields": {"number": 8, "content": "8."}}, {"model": "main.question", "pk": 12, "fields": {"number": 9, "content": "99"}}, {"model": "main.question", "pk": 13, "fields": {"number": 10, "content": "1000"}}, {"model": "main.choice", "pk": 1, "fields": {"content": "귤 따기 체험 티켓", "question": 1, "developer": 1}}, {"model": "main.choice", "pk": 2, "fields": {"content": "박물관 입장 티켓", "question": 1, "developer": 2}}, {"model": "main.choice", "pk": 3, "fields": {"content": "제주도 레저 체험권", "question": 1, "developer": 3}}, {"model": "main.choice", "pk": 4, "fields": {"content": "어떻게든 되겠지! 이것도 추억이야~", "question": 2, "developer": 1}}, {"model": "main.choice", "pk": 5, "fields": {"content": ">캐리어에서 준비한 보조배터리를 꺼낸다", "question": 2, "developer": 2}}, {"model": "main.choice", "pk": 6, "fields": {"content": "도착했다고 연락해야 하는데.. 미안한 마음이 앞선다", "question": 2, "developer": 3}}, {"model": "main.choice", "pk": 7, "fields": {"content": "돌고래 보러 가기", "question": 3, "developer": 1}}, {"model": "main.choice", "pk": 8, "fields": {"content": "제주 감성 가득한 원데이 클래스를 알아본다", "question": 3, "developer": 2}}, {"model": "main.choice", "pk": 9, "fields": {"content": "서핑, 스쿠버다이빙 등 액티비티 체험에 도전한다", "question": 3, "developer": 3}}, {"model": "main.choice", "pk": 10, "fields": {"content": "내일 애월 쪽 둘러보려 하는데, 같이 가실래요?", "question": 4, "developer": 1}}, {"model": "main.choice", "pk": 11, "fields": {"content": "죄송해요.. 전 다른 일정이 있어서요ㅠㅠ", "question": 4, "developer": 2}}, {"model": "main.choice", "pk": 12, "fields": {"content": "좋아요! 저도 동행해도 되나요?", "question": 4, "developer": 3}}, {"model": "main.choice", "pk": 13, "fields": {"content": "제주 인싸템인 귤귀도리와 귤모자", "question": 5, "developer": 1}}, {"model": "main.choice", "pk": 14, "fields": {"content": "여행을 기록하기 위한 문구템(제주 감성 스티커, 엽서 등)", "question": 5, "developer": 2}}, {"model": "main.choice", "pk": 15, "fields": {"content": "친구들 취향저격 기념품(제주 캔들, 초콜릿 등)", "question": 5, "developer": 3}}, {"model": "main.choice", "pk": 16, "fields": {"content": "사려니 숲 에코 힐링 체험", "question": 6, "developer": 1}}, {"model": "main.choice", "pk": 17, "fields": {"content": "제주 문화유산 탐방 프로그램", "question": 6, "developer": 2}}, {"model": "main.choice", "pk": 18, "fields": {"content": "이국적인 카페 or 펍 투어", "question": 6, "developer": 3}}, {"model": "main.choice", "pk": 19, "fields": {"content": "석양을 바라보며 행복했던 저녁 시간", "question": 7, "developer": 1}}, {"model": "main.choice", "pk": 20, "fields": {"content": "제주도 박물관 도장깨기", "question": 7, "developer": 2}}, {"model": "main.choice", "pk": 21, "fields": {"content": "다양한 어트랙션과 레이싱 테마파크", "question": 7, "developer": 3}}, {"model": "main.choice", "pk": 52, "fields": {"content": "sdfsd", "question": 11, "developer": 1}}, {"model": "main.choice", "pk": 53, "fields": {"content": "asdf", "question": 12, "developer": 2}}, {"model": "main.choice", "pk": 54, "fields": {"content": "asdfs", "question": 13, "developer": 3}}]
+*/

@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block head %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+{% endblock head %}
+
+{% block body %}
+    <section id="main_contents">
+        <div class="wrapper">
+            <div class="title">
+                <!--h3.sub_title 치고 enter-->
+                <h3 class="main_title">나의 제주여행</h3>
+                <!--<h3 class="sub_title">My trip to Jeju island</h3>-->
+            </div>
+            <div class="intro">
+                <h1>어디로 떠나볼까?!</h1>
+                <div class="type">
+                    <ul class="type_list">
+                        <li>비자림</li>
+                        <li>메이즈랜드</li>
+                        <li>성읍민속마을</li>
+                        <li>9.81파크</li>
+                        <li>비자림</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button">
+                <a href="{% url 'main:form' %}">
+                    <button class="start" type="button">시작하기</button>
+                </a>
+            </div>
+            <!--
+            <div class="result_data">
+                <div class="data_wrap">
+                    <h3>참여자 수</h3>
+                    <ul>
+                    {% for developer in developers %}
+                        <li> {{ developer.name}} : {{ developer.count}}명 </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="weniv">
+                <a href="http://www.paullab.co.kr">
+                    <img src="{% static 'image/jeju_logo.png' %}" alt="weniv">
+                </a>
+            </div>
+-->
+        </div>
+    </section>
+{% endblock body %}

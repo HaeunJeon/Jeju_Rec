@@ -1,0 +1,536 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 08:54:53 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x55db2c3fe140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55db2c3fe140 pid: 1158 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1158)
+spawned uWSGI worker 1 (pid: 1165, cores: 1)
+subprocess 1163 exited with code 0
+[pid: 1165|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4209 bytes} [Mon Jun  6 08:55:10 2022] GET / => generated 2193 bytes in 145 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1165|app: 0|req: 2/2] 172.17.0.1 () {54 vars in 4109 bytes} [Mon Jun  6 08:55:11 2022] GET /favicon.ico => generated 2988 bytes in 36 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 3/3] 172.17.0.1 () {58 vars in 4197 bytes} [Mon Jun  6 08:55:15 2022] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 4/4] 172.17.0.1 () {58 vars in 4199 bytes} [Mon Jun  6 08:55:15 2022] GET /admin/ => generated 7256 bytes in 146 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 5/5] 172.17.0.1 () {56 vars in 4175 bytes} [Mon Jun  6 08:55:16 2022] GET /admin/ => generated 7256 bytes in 68 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 6/6] 172.17.0.1 () {58 vars in 4270 bytes} [Mon Jun  6 08:55:19 2022] GET /admin/main/developer/ => generated 7586 bytes in 192 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 7/7] 172.17.0.1 () {54 vars in 4074 bytes} [Mon Jun  6 08:55:19 2022] GET /admin/jsi18n/ => generated 3195 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 8/8] 172.17.0.1 () {58 vars in 4303 bytes} [Mon Jun  6 08:55:21 2022] GET /admin/main/developer/2/change/ => generated 10229 bytes in 157 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 9/9] 172.17.0.1 () {54 vars in 4083 bytes} [Mon Jun  6 08:55:22 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 10/10] 172.17.0.1 () {58 vars in 4288 bytes} [Mon Jun  6 08:55:29 2022] GET /admin/main/choice/ => generated 20917 bytes in 499 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 11/11] 172.17.0.1 () {54 vars in 4071 bytes} [Mon Jun  6 08:55:29 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 12/12] 172.17.0.1 () {58 vars in 4280 bytes} [Mon Jun  6 08:55:35 2022] GET /admin/main/question/ => generated 9474 bytes in 161 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 13/13] 172.17.0.1 () {54 vars in 4073 bytes} [Mon Jun  6 08:55:35 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 14/14] 172.17.0.1 () {58 vars in 4284 bytes} [Mon Jun  6 08:55:38 2022] GET /admin/main/developer/ => generated 7586 bytes in 136 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 15/15] 172.17.0.1 () {54 vars in 4074 bytes} [Mon Jun  6 08:55:39 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 16/16] 172.17.0.1 () {58 vars in 4303 bytes} [Mon Jun  6 08:55:43 2022] GET /admin/main/developer/3/change/ => generated 9982 bytes in 65 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 17/17] 172.17.0.1 () {54 vars in 4083 bytes} [Mon Jun  6 08:55:43 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 18/18] 172.17.0.1 () {58 vars in 4265 bytes} [Mon Jun  6 08:55:49 2022] GET /admin/main/choice/ => generated 20917 bytes in 429 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 1165|app: 0|req: 19/19] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 08:55:49 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 09:14:49 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x561d0ce00140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561d0ce00140 pid: 1747 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1747)
+spawned uWSGI worker 1 (pid: 1750, cores: 1)
+subprocess 1748 exited with code 0
+[pid: 1750|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 09:15:53 2022] GET / => generated 2193 bytes in 118 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4176 bytes} [Mon Jun  6 09:15:57 2022] GET /admin/ => generated 7256 bytes in 196 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 4152 bytes} [Mon Jun  6 09:15:59 2022] GET /admin/ => generated 7256 bytes in 97 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 4/4] 172.17.0.1 () {56 vars in 4163 bytes} [Mon Jun  6 09:18:57 2022] GET / => generated 2193 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 5/5] 172.17.0.1 () {58 vars in 4157 bytes} [Mon Jun  6 09:25:02 2022] GET /result/2 => generated 8131 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 6/6] 172.17.0.1 () {38 vars in 667 bytes} [Mon Jun  6 09:27:28 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1750|app: 0|req: 7/7] 172.17.0.1 () {40 vars in 729 bytes} [Mon Jun  6 09:27:34 2022] GET /form/ => generated 34961 bytes in 215 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 09:56:01 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x560eafcd6140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x560eafcd6140 pid: 2965 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 2965)
+spawned uWSGI worker 1 (pid: 2973, cores: 1)
+subprocess 2966 exited with code 0
+[pid: 2973|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4209 bytes} [Mon Jun  6 09:56:16 2022] GET / => generated 2193 bytes in 65 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4232 bytes} [Mon Jun  6 09:56:17 2022] GET /form/ => generated 34374 bytes in 213 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 3/3] 172.17.0.1 () {66 vars in 4439 bytes} [Mon Jun  6 09:56:46 2022] POST /submit/ => generated 0 bytes in 38 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 4/4] 172.17.0.1 () {60 vars in 4274 bytes} [Mon Jun  6 09:56:46 2022] GET /result/1 => generated 8281 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 5/5] 172.17.0.1 () {58 vars in 4153 bytes} [Mon Jun  6 09:57:14 2022] GET /admin/ => generated 7256 bytes in 120 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 6/6] 172.17.0.1 () {56 vars in 4129 bytes} [Mon Jun  6 09:57:15 2022] GET /admin/ => generated 7256 bytes in 64 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 7/7] 172.17.0.1 () {58 vars in 4224 bytes} [Mon Jun  6 09:57:17 2022] GET /admin/main/developer/ => generated 7586 bytes in 136 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 8/8] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 09:57:17 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 9/9] 172.17.0.1 () {58 vars in 4233 bytes} [Mon Jun  6 09:57:19 2022] GET /admin/main/choice/ => generated 20312 bytes in 486 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 10/10] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 09:57:19 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 11/11] 172.17.0.1 () {58 vars in 4234 bytes} [Mon Jun  6 09:57:36 2022] GET /admin/main/question/ => generated 9491 bytes in 217 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 12/12] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 09:57:36 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 13/13] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 09:57:48 2022] GET /admin/main/question/8/change/ => generated 7587 bytes in 105 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 14/14] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 09:57:48 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 15/15] 172.17.0.1 () {58 vars in 4263 bytes} [Mon Jun  6 09:57:49 2022] GET /admin/main/question/8/delete/ => generated 6895 bytes in 75 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 16/16] 172.17.0.1 () {66 vars in 4459 bytes} [Mon Jun  6 09:57:53 2022] POST /admin/main/question/8/delete/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 10 headers in 732 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 17/17] 172.17.0.1 () {60 vars in 4637 bytes} [Mon Jun  6 09:57:53 2022] GET /admin/main/question/ => generated 9439 bytes in 307 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 18/18] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 09:57:54 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 19/19] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 09:57:56 2022] GET /admin/main/question/9/change/ => generated 7335 bytes in 260 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 20/20] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 09:57:56 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 21/21] 172.17.0.1 () {58 vars in 4263 bytes} [Mon Jun  6 09:57:57 2022] GET /admin/main/question/9/delete/ => generated 6573 bytes in 93 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 22/22] 172.17.0.1 () {66 vars in 4459 bytes} [Mon Jun  6 09:57:58 2022] POST /admin/main/question/9/delete/ => generated 0 bytes in 52 msecs (HTTP/1.1 302) 10 headers in 680 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 23/23] 172.17.0.1 () {60 vars in 4585 bytes} [Mon Jun  6 09:57:59 2022] GET /admin/main/question/ => generated 9072 bytes in 201 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 24/24] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 09:57:59 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 25/25] 172.17.0.1 () {58 vars in 4256 bytes} [Mon Jun  6 09:58:02 2022] GET /admin/main/question/10/change/ => generated 7273 bytes in 63 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 26/26] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 09:58:02 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 27/27] 172.17.0.1 () {58 vars in 4266 bytes} [Mon Jun  6 09:58:04 2022] GET /admin/main/question/10/delete/ => generated 6431 bytes in 32 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 28/28] 172.17.0.1 () {66 vars in 4462 bytes} [Mon Jun  6 09:58:05 2022] POST /admin/main/question/10/delete/ => generated 0 bytes in 107 msecs (HTTP/1.1 302) 10 headers in 661 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 29/29] 172.17.0.1 () {60 vars in 4567 bytes} [Mon Jun  6 09:58:06 2022] GET /admin/main/question/ => generated 8766 bytes in 166 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 30/30] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 09:58:07 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 31/31] 172.17.0.1 () {58 vars in 4232 bytes} [Mon Jun  6 09:58:09 2022] GET /admin/main/choice/ => generated 15976 bytes in 331 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 32/32] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 09:58:09 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 33/33] 172.17.0.1 () {56 vars in 4117 bytes} [Mon Jun  6 09:58:24 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 2973|app: 0|req: 34/34] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 09:58:26 2022] GET /form/ => generated 24108 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 10:00:39 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x55c1df492140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c1df492140 pid: 3128 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3128)
+spawned uWSGI worker 1 (pid: 3131, cores: 1)
+subprocess 3129 exited with code 0
+[pid: 3131|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4195 bytes} [Mon Jun  6 10:00:43 2022] GET /form => generated 0 bytes in 9 msecs (HTTP/1.1 301) 5 headers in 174 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4197 bytes} [Mon Jun  6 10:00:43 2022] GET /form/ => generated 24108 bytes in 209 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 4152 bytes} [Mon Jun  6 10:00:46 2022] GET /admin/ => generated 8027 bytes in 89 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 4/4] 172.17.0.1 () {58 vars in 4241 bytes} [Mon Jun  6 10:00:51 2022] GET /admin/main/choice/ => generated 15976 bytes in 367 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 5/5] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:00:52 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 6/6] 172.17.0.1 () {58 vars in 4259 bytes} [Mon Jun  6 10:00:55 2022] GET /admin/main/developer/ => generated 7586 bytes in 144 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 7/7] 172.17.0.1 () {54 vars in 4051 bytes} [Mon Jun  6 10:00:55 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 8/8] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:00:56 2022] GET /admin/main/question/ => generated 8527 bytes in 151 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 9/9] 172.17.0.1 () {54 vars in 4050 bytes} [Mon Jun  6 10:00:57 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 10/10] 172.17.0.1 () {58 vars in 4255 bytes} [Mon Jun  6 10:00:58 2022] GET /admin/main/choice/ => generated 15976 bytes in 339 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 11/11] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:00:59 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 12/12] 172.17.0.1 () {58 vars in 4273 bytes} [Mon Jun  6 10:01:16 2022] GET /admin/main/choice/36/change/ => generated 10142 bytes in 200 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 13/13] 172.17.0.1 () {54 vars in 4058 bytes} [Mon Jun  6 10:01:16 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 14/14] 172.17.0.1 () {58 vars in 4283 bytes} [Mon Jun  6 10:01:19 2022] GET /admin/main/choice/36/delete/ => generated 5732 bytes in 90 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 15/15] 172.17.0.1 () {66 vars in 4479 bytes} [Mon Jun  6 10:01:20 2022] POST /admin/main/choice/36/delete/ => generated 0 bytes in 144 msecs (HTTP/1.1 302) 10 headers in 668 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 16/16] 172.17.0.1 () {60 vars in 4593 bytes} [Mon Jun  6 10:01:20 2022] GET /admin/main/choice/ => generated 15925 bytes in 417 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 17/17] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:01:21 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 18/18] 172.17.0.1 () {58 vars in 4273 bytes} [Mon Jun  6 10:01:22 2022] GET /admin/main/choice/35/change/ => generated 10210 bytes in 161 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 19/19] 172.17.0.1 () {54 vars in 4058 bytes} [Mon Jun  6 10:01:22 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 20/20] 172.17.0.1 () {58 vars in 4283 bytes} [Mon Jun  6 10:01:23 2022] GET /admin/main/choice/35/delete/ => generated 5783 bytes in 43 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 21/21] 172.17.0.1 () {66 vars in 4479 bytes} [Mon Jun  6 10:01:24 2022] POST /admin/main/choice/35/delete/ => generated 0 bytes in 246 msecs (HTTP/1.1 302) 10 headers in 676 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 22/22] 172.17.0.1 () {60 vars in 4601 bytes} [Mon Jun  6 10:01:25 2022] GET /admin/main/choice/ => generated 15631 bytes in 337 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 23/23] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:01:25 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 24/24] 172.17.0.1 () {58 vars in 4273 bytes} [Mon Jun  6 10:01:26 2022] GET /admin/main/choice/34/change/ => generated 10358 bytes in 139 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 25/25] 172.17.0.1 () {54 vars in 4058 bytes} [Mon Jun  6 10:01:27 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 26/26] 172.17.0.1 () {58 vars in 4283 bytes} [Mon Jun  6 10:01:28 2022] GET /admin/main/choice/34/delete/ => generated 5894 bytes in 66 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 27/27] 172.17.0.1 () {66 vars in 4479 bytes} [Mon Jun  6 10:01:29 2022] POST /admin/main/choice/34/delete/ => generated 0 bytes in 289 msecs (HTTP/1.1 302) 10 headers in 715 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 28/28] 172.17.0.1 () {60 vars in 4640 bytes} [Mon Jun  6 10:01:29 2022] GET /admin/main/choice/ => generated 15320 bytes in 324 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 29/29] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:01:29 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 30/30] 172.17.0.1 () {58 vars in 4273 bytes} [Mon Jun  6 10:01:30 2022] GET /admin/main/choice/33/change/ => generated 10066 bytes in 157 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 31/31] 172.17.0.1 () {54 vars in 4058 bytes} [Mon Jun  6 10:01:31 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 32/32] 172.17.0.1 () {58 vars in 4283 bytes} [Mon Jun  6 10:01:32 2022] GET /admin/main/choice/33/delete/ => generated 5675 bytes in 37 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 33/33] 172.17.0.1 () {66 vars in 4479 bytes} [Mon Jun  6 10:01:34 2022] POST /admin/main/choice/33/delete/ => generated 0 bytes in 128 msecs (HTTP/1.1 302) 10 headers in 646 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 34/34] 172.17.0.1 () {60 vars in 4571 bytes} [Mon Jun  6 10:01:34 2022] GET /admin/main/choice/ => generated 14972 bytes in 386 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 35/35] 172.17.0.1 () {54 vars in 4048 bytes} [Mon Jun  6 10:01:35 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 36/36] 172.17.0.1 () {58 vars in 4273 bytes} [Mon Jun  6 10:01:36 2022] GET /admin/main/choice/32/change/ => generated 10086 bytes in 147 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 37/37] 172.17.0.1 () {54 vars in 4058 bytes} [Mon Jun  6 10:01:36 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 38/38] 172.17.0.1 () {58 vars in 4283 bytes} [Mon Jun  6 10:01:37 2022] GET /admin/main/choice/32/delete/ => generated 5690 bytes in 66 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 39/39] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:38 2022] POST /admin/main/choice/32/delete/ => generated 0 bytes in 277 msecs (HTTP/1.1 302) 10 headers in 644 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 40/40] 172.17.0.1 () {60 vars in 4546 bytes} [Mon Jun  6 10:01:38 2022] GET /admin/main/choice/ => generated 14697 bytes in 279 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 41/41] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:39 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 42/42] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:01:40 2022] GET /admin/main/choice/31/change/ => generated 10230 bytes in 165 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 43/43] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:01:40 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 44/44] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:01:41 2022] GET /admin/main/choice/31/delete/ => generated 5798 bytes in 90 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 45/45] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:42 2022] POST /admin/main/choice/31/delete/ => generated 0 bytes in 184 msecs (HTTP/1.1 302) 10 headers in 682 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 46/46] 172.17.0.1 () {60 vars in 4584 bytes} [Mon Jun  6 10:01:42 2022] GET /admin/main/choice/ => generated 14417 bytes in 255 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 47/47] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:42 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 48/48] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:01:43 2022] GET /admin/main/choice/30/change/ => generated 10170 bytes in 184 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 49/49] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:01:44 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 50/50] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:01:45 2022] GET /admin/main/choice/30/delete/ => generated 5753 bytes in 94 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 51/51] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:46 2022] POST /admin/main/choice/30/delete/ => generated 0 bytes in 343 msecs (HTTP/1.1 302) 10 headers in 667 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 52/52] 172.17.0.1 () {60 vars in 4569 bytes} [Mon Jun  6 10:01:46 2022] GET /admin/main/choice/ => generated 14101 bytes in 268 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 53/53] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:47 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 54/54] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:01:48 2022] GET /admin/main/choice/29/change/ => generated 10250 bytes in 217 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 55/55] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:01:48 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 56/56] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:01:49 2022] GET /admin/main/choice/29/delete/ => generated 5813 bytes in 86 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 57/57] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:50 2022] POST /admin/main/choice/29/delete/ => generated 0 bytes in 137 msecs (HTTP/1.1 302) 10 headers in 674 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 58/58] 172.17.0.1 () {60 vars in 4576 bytes} [Mon Jun  6 10:01:51 2022] GET /admin/main/choice/ => generated 13800 bytes in 317 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 59/59] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:51 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 60/60] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:01:52 2022] GET /admin/main/choice/28/change/ => generated 10086 bytes in 133 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 61/61] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:01:52 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 62/62] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:01:53 2022] GET /admin/main/choice/28/delete/ => generated 5690 bytes in 39 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 63/63] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:54 2022] POST /admin/main/choice/28/delete/ => generated 0 bytes in 140 msecs (HTTP/1.1 302) 10 headers in 634 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 64/64] 172.17.0.1 () {60 vars in 4536 bytes} [Mon Jun  6 10:01:54 2022] GET /admin/main/choice/ => generated 13479 bytes in 259 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 65/65] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:54 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 66/66] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:01:55 2022] GET /admin/main/choice/27/change/ => generated 10154 bytes in 216 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 67/67] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:01:56 2022] GET /admin/jsi18n/ => generated 3195 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 68/68] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:01:56 2022] GET /admin/main/choice/27/delete/ => generated 5741 bytes in 78 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 69/69] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:01:57 2022] POST /admin/main/choice/27/delete/ => generated 0 bytes in 129 msecs (HTTP/1.1 302) 10 headers in 663 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 70/70] 172.17.0.1 () {60 vars in 4565 bytes} [Mon Jun  6 10:01:58 2022] GET /admin/main/choice/ => generated 13199 bytes in 286 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 71/71] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:01:58 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 72/72] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:02:00 2022] GET /admin/main/choice/22/change/ => generated 10010 bytes in 178 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 73/73] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:02:00 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 74/74] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:02:02 2022] GET /admin/main/choice/22/delete/ => generated 5633 bytes in 95 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 75/75] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:02:03 2022] POST /admin/main/choice/22/delete/ => generated 0 bytes in 111 msecs (HTTP/1.1 302) 10 headers in 628 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 76/76] 172.17.0.1 () {60 vars in 4530 bytes} [Mon Jun  6 10:02:03 2022] GET /admin/main/choice/ => generated 12902 bytes in 241 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 77/77] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:02:04 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 78/78] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:02:07 2022] GET /admin/main/choice/26/change/ => generated 10018 bytes in 196 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 79/79] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:02:08 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 80/80] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:02:09 2022] GET /admin/main/choice/26/delete/ => generated 5639 bytes in 52 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 81/81] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:02:10 2022] POST /admin/main/choice/26/delete/ => generated 0 bytes in 34 msecs (HTTP/1.1 302) 10 headers in 634 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 82/82] 172.17.0.1 () {60 vars in 4536 bytes} [Mon Jun  6 10:02:10 2022] GET /admin/main/choice/ => generated 12641 bytes in 286 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 83/83] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:02:10 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 84/84] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:02:12 2022] GET /admin/main/choice/23/change/ => generated 10106 bytes in 169 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 85/85] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:02:12 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 86/86] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:02:13 2022] GET /admin/main/choice/23/delete/ => generated 5705 bytes in 91 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 87/87] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:02:14 2022] POST /admin/main/choice/23/delete/ => generated 0 bytes in 224 msecs (HTTP/1.1 302) 10 headers in 652 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 88/88] 172.17.0.1 () {60 vars in 4554 bytes} [Mon Jun  6 10:02:14 2022] GET /admin/main/choice/ => generated 12378 bytes in 340 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 89/89] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:02:15 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 90/90] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:02:16 2022] GET /admin/main/choice/24/change/ => generated 10026 bytes in 199 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 91/91] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:02:17 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 92/92] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:02:18 2022] GET /admin/main/choice/24/delete/ => generated 5645 bytes in 32 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 93/93] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:02:19 2022] POST /admin/main/choice/24/delete/ => generated 0 bytes in 210 msecs (HTTP/1.1 302) 10 headers in 635 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 94/94] 172.17.0.1 () {60 vars in 4537 bytes} [Mon Jun  6 10:02:19 2022] GET /admin/main/choice/ => generated 12093 bytes in 246 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 95/95] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:02:20 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 96/96] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:02:21 2022] GET /admin/main/choice/25/change/ => generated 10046 bytes in 192 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 97/97] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:02:21 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 98/98] 172.17.0.1 () {58 vars in 4260 bytes} [Mon Jun  6 10:02:22 2022] GET /admin/main/choice/25/delete/ => generated 5660 bytes in 77 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 99/99] 172.17.0.1 () {66 vars in 4456 bytes} [Mon Jun  6 10:02:23 2022] POST /admin/main/choice/25/delete/ => generated 0 bytes in 179 msecs (HTTP/1.1 302) 10 headers in 643 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 100/100] 172.17.0.1 () {60 vars in 4545 bytes} [Mon Jun  6 10:02:24 2022] GET /admin/main/choice/ => generated 11828 bytes in 268 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 101/101] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:02:24 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 102/102] 172.17.0.1 () {56 vars in 4117 bytes} [Mon Jun  6 10:02:36 2022] GET / => generated 2193 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 103/103] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 10:02:38 2022] GET /form/ => generated 16456 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 104/104] 172.17.0.1 () {58 vars in 4153 bytes} [Mon Jun  6 10:03:19 2022] GET /admin/ => generated 8068 bytes in 83 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 105/105] 172.17.0.1 () {56 vars in 4129 bytes} [Mon Jun  6 10:03:20 2022] GET /admin/ => generated 8068 bytes in 107 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 106/106] 172.17.0.1 () {58 vars in 4222 bytes} [Mon Jun  6 10:03:24 2022] GET /admin/main/question/ => generated 8527 bytes in 199 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 107/107] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:03:25 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 108/108] 172.17.0.1 () {60 vars in 4253 bytes} [Mon Jun  6 10:04:28 2022] GET /admin/main/question/ => generated 8527 bytes in 202 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 109/109] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:04:29 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 110/110] 172.17.0.1 () {56 vars in 4117 bytes} [Mon Jun  6 10:04:33 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 111/111] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 10:04:34 2022] GET /form/ => generated 16456 bytes in 170 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 112/112] 172.17.0.1 () {60 vars in 4217 bytes} [Mon Jun  6 10:09:16 2022] GET /form/ => generated 16456 bytes in 38 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 113/113] 172.17.0.1 () {60 vars in 4217 bytes} [Mon Jun  6 10:10:12 2022] GET /form/ => generated 16393 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 114/114] 172.17.0.1 () {60 vars in 4217 bytes} [Mon Jun  6 10:14:35 2022] GET /form/ => generated 16393 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 115/115] 172.17.0.1 () {60 vars in 4217 bytes} [Mon Jun  6 10:17:06 2022] GET /form/ => generated 16465 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3131|app: 0|req: 116/116] 172.17.0.1 () {60 vars in 4217 bytes} [Mon Jun  6 10:17:53 2022] GET /form/ => generated 16465 bytes in 65 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 10:19:06 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x55a710409140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55a710409140 pid: 3721 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3721)
+spawned uWSGI worker 1 (pid: 3724, cores: 1)
+subprocess 3722 exited with code 0
+[pid: 3724|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4209 bytes} [Mon Jun  6 10:19:14 2022] GET / => generated 2193 bytes in 65 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4232 bytes} [Mon Jun  6 10:19:15 2022] GET /form/ => generated 16465 bytes in 70 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 3/3] 172.17.0.1 () {58 vars in 4153 bytes} [Mon Jun  6 10:26:48 2022] GET /admin/ => generated 8068 bytes in 124 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 4/4] 172.17.0.1 () {56 vars in 4129 bytes} [Mon Jun  6 10:26:48 2022] GET /admin/ => generated 8068 bytes in 31 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 5/5] 172.17.0.1 () {58 vars in 4224 bytes} [Mon Jun  6 10:26:51 2022] GET /admin/main/developer/ => generated 7586 bytes in 215 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 6/6] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:26:51 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 7/7] 172.17.0.1 () {58 vars in 4257 bytes} [Mon Jun  6 10:26:54 2022] GET /admin/main/developer/5/change/ => generated 9626 bytes in 87 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 8/8] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 10:26:54 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 9/9] 172.17.0.1 () {58 vars in 4248 bytes} [Mon Jun  6 10:26:59 2022] GET /admin/main/developer/ => generated 7586 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 10/10] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:27:00 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 11/11] 172.17.0.1 () {58 vars in 4257 bytes} [Mon Jun  6 10:27:03 2022] GET /admin/main/developer/1/change/ => generated 10332 bytes in 98 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 12/12] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 10:27:04 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 13/13] 172.17.0.1 () {58 vars in 4248 bytes} [Mon Jun  6 10:27:09 2022] GET /admin/main/developer/ => generated 7586 bytes in 171 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 14/14] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:27:09 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 15/15] 172.17.0.1 () {58 vars in 4257 bytes} [Mon Jun  6 10:27:11 2022] GET /admin/main/developer/4/change/ => generated 9322 bytes in 49 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 16/16] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 10:27:11 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 17/17] 172.17.0.1 () {58 vars in 4248 bytes} [Mon Jun  6 10:27:13 2022] GET /admin/main/developer/ => generated 7586 bytes in 157 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 18/18] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:27:13 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 19/19] 172.17.0.1 () {60 vars in 4302 bytes} [Mon Jun  6 10:29:50 2022] GET /admin/main/developer/ => generated 7586 bytes in 199 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 20/20] 172.17.0.1 () {54 vars in 4051 bytes} [Mon Jun  6 10:29:50 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 21/21] 172.17.0.1 () {56 vars in 4140 bytes} [Mon Jun  6 10:29:56 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 22/22] 172.17.0.1 () {58 vars in 4209 bytes} [Mon Jun  6 10:29:58 2022] GET /form/ => generated 16393 bytes in 40 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 23/23] 172.17.0.1 () {58 vars in 4153 bytes} [Mon Jun  6 10:33:18 2022] GET /admin/ => generated 8068 bytes in 150 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 24/24] 172.17.0.1 () {56 vars in 4129 bytes} [Mon Jun  6 10:33:19 2022] GET /admin/ => generated 8068 bytes in 59 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 25/25] 172.17.0.1 () {58 vars in 4218 bytes} [Mon Jun  6 10:33:21 2022] GET /admin/main/choice/ => generated 11609 bytes in 236 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 26/26] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:33:21 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 27/27] 172.17.0.1 () {58 vars in 4236 bytes} [Mon Jun  6 10:33:25 2022] GET /admin/main/developer/ => generated 7586 bytes in 135 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 28/28] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:33:25 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 29/29] 172.17.0.1 () {58 vars in 4237 bytes} [Mon Jun  6 10:33:27 2022] GET /admin/main/question/ => generated 8527 bytes in 197 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 30/30] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:28 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 31/31] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:29 2022] GET /admin/main/question/1/change/ => generated 7415 bytes in 194 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 32/32] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:30 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 33/33] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:36 2022] GET /admin/main/question/ => generated 8527 bytes in 177 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 34/34] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:36 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 35/35] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:37 2022] GET /admin/main/question/2/change/ => generated 7367 bytes in 163 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 36/36] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:37 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 37/37] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:39 2022] GET /admin/main/question/ => generated 8527 bytes in 150 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 38/38] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:40 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 39/39] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:41 2022] GET /admin/main/question/3/change/ => generated 7231 bytes in 78 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 40/40] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:41 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 41/41] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:43 2022] GET /admin/main/question/ => generated 8527 bytes in 309 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 42/42] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:43 2022] GET /admin/jsi18n/ => generated 3195 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 43/43] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:44 2022] GET /admin/main/question/4/change/ => generated 7395 bytes in 119 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 44/44] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:44 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 45/45] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:46 2022] GET /admin/main/question/ => generated 8527 bytes in 165 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 46/46] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:46 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 47/47] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:48 2022] GET /admin/main/question/5/change/ => generated 7139 bytes in 80 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 48/48] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:48 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 49/49] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:49 2022] GET /admin/main/question/ => generated 8527 bytes in 180 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 50/50] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:50 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 51/51] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:51 2022] GET /admin/main/question/6/change/ => generated 7143 bytes in 79 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 52/52] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:51 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 53/53] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:52 2022] GET /admin/main/question/ => generated 8527 bytes in 179 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 54/54] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:53 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 55/55] 172.17.0.1 () {58 vars in 4254 bytes} [Mon Jun  6 10:33:53 2022] GET /admin/main/question/7/change/ => generated 7367 bytes in 79 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 56/56] 172.17.0.1 () {54 vars in 4036 bytes} [Mon Jun  6 10:33:54 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 57/57] 172.17.0.1 () {58 vars in 4245 bytes} [Mon Jun  6 10:33:55 2022] GET /admin/main/question/ => generated 8527 bytes in 179 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 58/58] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:33:56 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 59/59] 172.17.0.1 () {58 vars in 4238 bytes} [Mon Jun  6 10:33:57 2022] GET /admin/main/developer/ => generated 7586 bytes in 216 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 60/60] 172.17.0.1 () {54 vars in 4028 bytes} [Mon Jun  6 10:33:57 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 61/61] 172.17.0.1 () {58 vars in 4257 bytes} [Mon Jun  6 10:33:58 2022] GET /admin/main/developer/1/change/ => generated 10332 bytes in 125 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 62/62] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 10:33:59 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 63/63] 172.17.0.1 () {58 vars in 4242 bytes} [Mon Jun  6 10:34:04 2022] GET /admin/main/choice/ => generated 11609 bytes in 248 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 64/64] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:34:05 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 65/65] 172.17.0.1 () {58 vars in 4250 bytes} [Mon Jun  6 10:34:07 2022] GET /admin/main/choice/21/change/ => generated 9958 bytes in 144 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 66/66] 172.17.0.1 () {54 vars in 4035 bytes} [Mon Jun  6 10:34:07 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 67/67] 172.17.0.1 () {58 vars in 4240 bytes} [Mon Jun  6 10:34:21 2022] GET /admin/main/choice/ => generated 11609 bytes in 275 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 68/68] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:34:21 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 69/69] 172.17.0.1 () {58 vars in 4248 bytes} [Mon Jun  6 10:34:26 2022] GET /admin/main/choice/5/change/ => generated 9996 bytes in 176 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 70/70] 172.17.0.1 () {54 vars in 4034 bytes} [Mon Jun  6 10:34:27 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 71/71] 172.17.0.1 () {66 vars in 4455 bytes} [Mon Jun  6 10:34:31 2022] POST /admin/main/choice/5/change/ => generated 0 bytes in 69 msecs (HTTP/1.1 302) 10 headers in 660 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 72/72] 172.17.0.1 () {60 vars in 4561 bytes} [Mon Jun  6 10:34:31 2022] GET /admin/main/choice/ => generated 11851 bytes in 390 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 73/73] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:34:32 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 74/74] 172.17.0.1 () {56 vars in 4117 bytes} [Mon Jun  6 10:36:53 2022] GET / => generated 2193 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 75/75] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 10:36:55 2022] GET /form/ => generated 16389 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 76/76] 172.17.0.1 () {58 vars in 4153 bytes} [Mon Jun  6 10:44:57 2022] GET /admin/ => generated 8049 bytes in 79 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 77/77] 172.17.0.1 () {56 vars in 4129 bytes} [Mon Jun  6 10:44:59 2022] GET /admin/ => generated 8049 bytes in 87 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 78/78] 172.17.0.1 () {58 vars in 4218 bytes} [Mon Jun  6 10:45:01 2022] GET /admin/main/choice/ => generated 11605 bytes in 311 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 79/79] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:45:02 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 80/80] 172.17.0.1 () {58 vars in 4234 bytes} [Mon Jun  6 10:45:05 2022] GET /admin/main/question/ => generated 8527 bytes in 158 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 81/81] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:45:05 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 82/82] 172.17.0.1 () {58 vars in 4244 bytes} [Mon Jun  6 10:45:09 2022] GET /admin/main/question/add/ => generated 6690 bytes in 94 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 83/83] 172.17.0.1 () {54 vars in 4031 bytes} [Mon Jun  6 10:45:09 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 84/84] 172.17.0.1 () {66 vars in 4446 bytes} [Mon Jun  6 10:45:16 2022] POST /admin/main/question/add/ => generated 0 bytes in 95 msecs (HTTP/1.1 302) 10 headers in 632 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 85/85] 172.17.0.1 () {60 vars in 4542 bytes} [Mon Jun  6 10:45:16 2022] GET /admin/main/question/11/change/ => generated 7170 bytes in 134 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 86/86] 172.17.0.1 () {54 vars in 4037 bytes} [Mon Jun  6 10:45:17 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 87/87] 172.17.0.1 () {58 vars in 4246 bytes} [Mon Jun  6 10:45:22 2022] GET /admin/main/question/ => generated 8734 bytes in 132 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 88/88] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:45:22 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 89/89] 172.17.0.1 () {58 vars in 4244 bytes} [Mon Jun  6 10:45:25 2022] GET /admin/main/question/add/ => generated 6690 bytes in 44 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 90/90] 172.17.0.1 () {54 vars in 4031 bytes} [Mon Jun  6 10:45:25 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 91/91] 172.17.0.1 () {66 vars in 4446 bytes} [Mon Jun  6 10:45:30 2022] POST /admin/main/question/add/ => generated 0 bytes in 31 msecs (HTTP/1.1 302) 10 headers in 596 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 92/92] 172.17.0.1 () {60 vars in 4496 bytes} [Mon Jun  6 10:45:30 2022] GET /admin/main/question/ => generated 9141 bytes in 157 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 93/93] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:45:30 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 94/94] 172.17.0.1 () {58 vars in 4244 bytes} [Mon Jun  6 10:45:32 2022] GET /admin/main/question/add/ => generated 6690 bytes in 75 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 95/95] 172.17.0.1 () {54 vars in 4031 bytes} [Mon Jun  6 10:45:33 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 96/96] 172.17.0.1 () {66 vars in 4446 bytes} [Mon Jun  6 10:45:38 2022] POST /admin/main/question/add/ => generated 0 bytes in 63 msecs (HTTP/1.1 302) 10 headers in 597 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 97/97] 172.17.0.1 () {60 vars in 4497 bytes} [Mon Jun  6 10:45:38 2022] GET /admin/main/question/ => generated 9357 bytes in 143 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 98/98] 172.17.0.1 () {54 vars in 4027 bytes} [Mon Jun  6 10:45:38 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 99/99] 172.17.0.1 () {58 vars in 4232 bytes} [Mon Jun  6 10:45:39 2022] GET /admin/main/choice/ => generated 11605 bytes in 307 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 100/100] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:45:40 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 101/101] 172.17.0.1 () {58 vars in 4238 bytes} [Mon Jun  6 10:45:41 2022] GET /admin/main/choice/add/ => generated 9656 bytes in 133 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 102/102] 172.17.0.1 () {54 vars in 4029 bytes} [Mon Jun  6 10:45:42 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 103/103] 172.17.0.1 () {66 vars in 4440 bytes} [Mon Jun  6 10:45:50 2022] POST /admin/main/choice/add/ => generated 0 bytes in 91 msecs (HTTP/1.1 302) 10 headers in 590 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 104/104] 172.17.0.1 () {60 vars in 4486 bytes} [Mon Jun  6 10:45:50 2022] GET /admin/main/choice/ => generated 12006 bytes in 238 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 105/105] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:45:51 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 106/106] 172.17.0.1 () {58 vars in 4238 bytes} [Mon Jun  6 10:45:53 2022] GET /admin/main/choice/add/ => generated 9656 bytes in 157 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 107/107] 172.17.0.1 () {54 vars in 4029 bytes} [Mon Jun  6 10:45:53 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 108/108] 172.17.0.1 () {66 vars in 4440 bytes} [Mon Jun  6 10:45:58 2022] POST /admin/main/choice/add/ => generated 0 bytes in 82 msecs (HTTP/1.1 302) 10 headers in 588 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 109/109] 172.17.0.1 () {60 vars in 4484 bytes} [Mon Jun  6 10:45:59 2022] GET /admin/main/choice/ => generated 12209 bytes in 247 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 110/110] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:45:59 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 111/111] 172.17.0.1 () {58 vars in 4238 bytes} [Mon Jun  6 10:46:02 2022] GET /admin/main/choice/add/ => generated 9656 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 112/112] 172.17.0.1 () {54 vars in 4029 bytes} [Mon Jun  6 10:46:02 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 113/113] 172.17.0.1 () {66 vars in 4440 bytes} [Mon Jun  6 10:46:11 2022] POST /admin/main/choice/add/ => generated 0 bytes in 46 msecs (HTTP/1.1 302) 10 headers in 590 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 114/114] 172.17.0.1 () {60 vars in 4486 bytes} [Mon Jun  6 10:46:11 2022] GET /admin/main/choice/ => generated 12415 bytes in 326 msecs (HTTP/1.1 200) 10 headers in 560 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 115/115] 172.17.0.1 () {54 vars in 4025 bytes} [Mon Jun  6 10:46:12 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 116/116] 172.17.0.1 () {56 vars in 4117 bytes} [Mon Jun  6 10:46:18 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 117/117] 172.17.0.1 () {58 vars in 4186 bytes} [Mon Jun  6 10:46:19 2022] GET /form/ => generated 19991 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 118/118] 172.17.0.1 () {66 vars in 4393 bytes} [Mon Jun  6 10:46:39 2022] POST /submit/ => generated 0 bytes in 27 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 119/119] 172.17.0.1 () {60 vars in 4228 bytes} [Mon Jun  6 10:46:39 2022] GET /result/1 => generated 8281 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 120/120] 172.17.0.1 () {58 vars in 4231 bytes} [Mon Jun  6 10:51:20 2022] GET /all_results/ => generated 1515 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 121/121] 172.17.0.1 () {58 vars in 4227 bytes} [Mon Jun  6 10:51:23 2022] GET /result/2 => generated 8131 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 122/122] 172.17.0.1 () {58 vars in 4227 bytes} [Mon Jun  6 10:51:27 2022] GET /result/1 => generated 8281 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 123/123] 172.17.0.1 () {58 vars in 4227 bytes} [Mon Jun  6 10:51:33 2022] GET /result/3 => generated 8094 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 124/124] 172.17.0.1 () {58 vars in 4227 bytes} [Mon Jun  6 10:51:36 2022] GET /result/5 => generated 8228 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 125/125] 172.17.0.1 () {58 vars in 4207 bytes} [Mon Jun  6 10:51:57 2022] GET / => generated 2193 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3724|app: 0|req: 126/126] 172.17.0.1 () {58 vars in 4223 bytes} [Mon Jun  6 10:52:04 2022] GET /result/1 => generated 8281 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 3724)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /workspace/mbittest
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/workspace/mbittest/tmp/MBIT.sock)
+running /workspace/mbittest/venv/bin/uwsgi
+[uWSGI] getting INI configuration from /workspace/mbittest/.config/uwsgi/uwsgi.ini
+[uwsgi-static] added mapping for /static => /workspace/mbittest/staticfiles/
+*** Starting uWSGI 2.0.20 (64bit) on [Mon Jun  6 10:53:09 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x560b93ea80d0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x560b93ea80d0 pid: 3721 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+gracefully (RE)spawned uWSGI master process (pid: 3721)
+spawned uWSGI worker 1 (pid: 4779, cores: 1)
+subprocess 4777 exited with code 0

@@ -1,0 +1,278 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 18:44:04 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:34743 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x5639ccad38c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5639ccad38c0 pid: 3806 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 3806)
+spawned uWSGI worker 1 (pid: 3809, cores: 1)
+spawned uWSGI http 1 (pid: 3810)
+subprocess 3807 exited with code 0
+[pid: 3809|app: 0|req: 1/1] 172.17.0.1 () {54 vars in 4139 bytes} [Sun May 29 18:44:17 2022] GET / => generated 2270 bytes in 46 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3809|app: -1|req: -1/2] 172.17.0.1 () {50 vars in 4011 bytes} [Sun May 29 18:44:18 2022] GET /static/css/reset.css => generated 1139 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/3] 172.17.0.1 () {50 vars in 4011 bytes} [Sun May 29 18:44:18 2022] GET /static/css/style.css => generated 2942 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/4] 172.17.0.1 () {50 vars in 4069 bytes} [Sun May 29 18:44:18 2022] GET /static/image/jeju_logo.png => generated 104469 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 3809|app: 0|req: 2/5] 172.17.0.1 () {54 vars in 4162 bytes} [Sun May 29 18:44:19 2022] GET /form/ => generated 35251 bytes in 341 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 3809|app: -1|req: -1/6] 172.17.0.1 () {50 vars in 3996 bytes} [Sun May 29 18:44:20 2022] GET /static/js/form.js => generated 2802 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/7] 172.17.0.1 () {50 vars in 4014 bytes} [Sun May 29 18:44:20 2022] GET /static/css/form.css => generated 1705 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3809|app: 0|req: 3/8] 172.17.0.1 () {62 vars in 4300 bytes} [Sun May 29 18:44:41 2022] POST /result/ => generated 7116 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 3809|app: -1|req: -1/9] 172.17.0.1 () {50 vars in 3997 bytes} [Sun May 29 18:44:41 2022] GET /static/css/result.css => generated 4835 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/10] 172.17.0.1 () {50 vars in 3979 bytes} [Sun May 29 18:44:41 2022] GET /static/js/result.js => generated 3750 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 125 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/11] 172.17.0.1 () {50 vars in 4043 bytes} [Sun May 29 18:44:41 2022] GET /static/image/aqua.png => generated 532144 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/12] 172.17.0.1 () {50 vars in 4037 bytes} [Sun May 29 18:44:41 2022] GET /static/image/2.png => generated 93698 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/13] 172.17.0.1 () {50 vars in 4063 bytes} [Sun May 29 18:44:41 2022] GET /static/image/visitjeju_logo.png => generated 3465 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/14] 172.17.0.1 () {50 vars in 4049 bytes} [Sun May 29 18:44:41 2022] GET /static/image/gwackji.png => generated 486192 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 3809|app: -1|req: -1/15] 172.17.0.1 () {50 vars in 4051 bytes} [Sun May 29 18:44:41 2022] GET /static/image/seongsan.png => generated 330465 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 114 bytes (0 switches on core 0)
+[pid: 3809|app: 0|req: 4/16] 172.17.0.1 () {54 vars in 4116 bytes} [Sun May 29 18:45:05 2022] GET / => generated 2270 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3810)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 18:55:59 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x5652a4928040
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5652a4928040 pid: 4195 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4195)
+spawned uWSGI worker 1 (pid: 4198, cores: 1)
+subprocess 4196 exited with code 0
+[pid: 4198|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4207 bytes} [Sun May 29 18:56:08 2022] GET / => generated 2270 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4198|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4230 bytes} [Sun May 29 18:56:10 2022] GET /form/ => generated 35251 bytes in 249 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 18:59:56 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x559d3b830140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559d3b830140 pid: 4392 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4392)
+spawned uWSGI worker 1 (pid: 4400, cores: 1)
+subprocess 4393 exited with code 0
+[pid: 4400|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4207 bytes} [Sun May 29 19:00:04 2022] GET / => generated 2270 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4400|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4238 bytes} [Sun May 29 19:00:22 2022] GET /?t=1653850836280 => generated 2270 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4400|app: 0|req: 3/3] 172.17.0.1 () {58 vars in 4246 bytes} [Sun May 29 19:00:23 2022] GET /form/ => generated 35251 bytes in 162 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 19:01:58 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x55b4388b9140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b4388b9140 pid: 4475 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4475)
+spawned uWSGI worker 1 (pid: 4478, cores: 1)
+subprocess 4476 exited with code 0
+[pid: 4478|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4215 bytes} [Sun May 29 19:02:07 2022] GET /?t=1653850941173 => generated 2270 bytes in 87 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4478|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4223 bytes} [Sun May 29 19:02:08 2022] GET /form/ => generated 35251 bytes in 305 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 4478|app: 0|req: 3/3] 172.17.0.1 () {66 vars in 4414 bytes} [Sun May 29 19:02:29 2022] POST /result/ => generated 7116 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4478|app: 0|req: 4/4] 172.17.0.1 () {66 vars in 4414 bytes} [Sun May 29 19:02:34 2022] POST /result/ => generated 7116 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4478|app: 0|req: 5/5] 172.17.0.1 () {66 vars in 4414 bytes} [Sun May 29 19:02:36 2022] POST /result/ => generated 7116 bytes in 107 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4478|app: 0|req: 6/6] 172.17.0.1 () {56 vars in 4138 bytes} [Sun May 29 19:03:07 2022] GET / => generated 2271 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 19:11:37 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x5613f5ccd140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5613f5ccd140 pid: 4898 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4898)
+spawned uWSGI worker 1 (pid: 4901, cores: 1)
+subprocess 4899 exited with code 0
+[pid: 4901|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4215 bytes} [Sun May 29 19:11:40 2022] GET /?t=1653851513870 => generated 2271 bytes in 72 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4223 bytes} [Sun May 29 19:11:41 2022] GET /form/ => generated 35251 bytes in 209 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 3/3] 172.17.0.1 () {66 vars in 4414 bytes} [Sun May 29 19:12:02 2022] POST /submit/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 4/4] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:02 2022] GET /result/2 => generated 7090 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 5/5] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:10 2022] GET /result/2 => generated 7090 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 6/6] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:11 2022] GET /result/2 => generated 7090 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 7/7] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:11 2022] GET /result/2 => generated 7090 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 8/8] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:12 2022] GET /result/2 => generated 7090 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 9/9] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:12:12 2022] GET /result/2 => generated 7090 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4901|app: 0|req: 10/10] 172.17.0.1 () {56 vars in 4138 bytes} [Sun May 29 19:12:23 2022] GET / => generated 2271 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 19:12:54 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x55b077d8b140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55b077d8b140 pid: 4958 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 4958)
+spawned uWSGI worker 1 (pid: 4961, cores: 1)
+subprocess 4959 exited with code 0
+[pid: 4961|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4215 bytes} [Sun May 29 19:12:56 2022] GET /?t=1653851590531 => generated 2271 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 4961|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 4223 bytes} [Sun May 29 19:12:57 2022] GET /form/ => generated 35251 bytes in 156 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 4961|app: 0|req: 3/3] 172.17.0.1 () {66 vars in 4414 bytes} [Sun May 29 19:13:16 2022] POST /submit/ => generated 0 bytes in 59 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 4961|app: 0|req: 4/4] 172.17.0.1 () {60 vars in 4249 bytes} [Sun May 29 19:13:16 2022] GET /result/2 => generated 7116 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
