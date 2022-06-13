@@ -96,7 +96,7 @@
     "model": "main.choice",
     "pk": 5,
     "fields": {
-        "content": ">캐리어에서 준비한 보조배터리를 꺼낸다",
+        "content": "캐리어에서 준비한 보조배터리를 꺼낸다",
         "developer": 2,
         "question": 2
     }
