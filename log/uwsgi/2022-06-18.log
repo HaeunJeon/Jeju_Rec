@@ -1,0 +1,495 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Sat Jun 18 10:17:05 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x560fbbee5140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x560fbbee5140 pid: 568 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 568)
+spawned uWSGI worker 1 (pid: 575, cores: 1)
+subprocess 573 exited with code 0
+[pid: 575|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4332 bytes} [Sat Jun 18 10:17:13 2022] GET / => generated 1354 bytes in 247 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 575|app: 0|req: 2/2] 172.17.0.1 () {54 vars in 4232 bytes} [Sat Jun 18 10:17:14 2022] GET /favicon.ico => generated 2809 bytes in 45 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 3/3] 172.17.0.1 () {58 vars in 4355 bytes} [Sat Jun 18 10:17:15 2022] GET /form/ => generated 16440 bytes in 171 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 4/4] 172.17.0.1 () {66 vars in 4562 bytes} [Sat Jun 18 10:17:30 2022] POST /submit/ => generated 0 bytes in 93 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+Internal Server Error: /result/2
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 5/5] 172.17.0.1 () {60 vars in 4397 bytes} [Sat Jun 18 10:17:30 2022] GET /result/2 => generated 162275 bytes in 412 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /result/20
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 6/6] 172.17.0.1 () {56 vars in 4304 bytes} [Sat Jun 18 10:17:42 2022] GET /result/20 => generated 161984 bytes in 407 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /result/2
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 7/7] 172.17.0.1 () {56 vars in 4302 bytes} [Sat Jun 18 10:17:46 2022] GET /result/2 => generated 161968 bytes in 326 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Not Found: /DMIN
+[pid: 575|app: 0|req: 8/8] 172.17.0.1 () {56 vars in 4294 bytes} [Sat Jun 18 10:17:52 2022] GET /DMIN => generated 2788 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 9/9] 172.17.0.1 () {58 vars in 4322 bytes} [Sat Jun 18 10:17:57 2022] GET /admin/ => generated 7675 bytes in 193 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 10/10] 172.17.0.1 () {56 vars in 4298 bytes} [Sat Jun 18 10:17:57 2022] GET /admin/ => generated 7675 bytes in 74 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 11/11] 172.17.0.1 () {58 vars in 4391 bytes} [Sat Jun 18 10:18:01 2022] GET /admin/main/question/ => generated 8527 bytes in 227 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 12/12] 172.17.0.1 () {54 vars in 4196 bytes} [Sat Jun 18 10:18:03 2022] GET /admin/jsi18n/ => generated 3195 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 13/13] 172.17.0.1 () {58 vars in 4407 bytes} [Sat Jun 18 10:18:06 2022] GET /admin/main/developer/ => generated 8451 bytes in 246 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 14/14] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:07 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 15/15] 172.17.0.1 () {58 vars in 4428 bytes} [Sat Jun 18 10:18:13 2022] GET /admin/main/developer/30/change/ => generated 10287 bytes in 153 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 16/16] 172.17.0.1 () {54 vars in 4207 bytes} [Sat Jun 18 10:18:14 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 17/17] 172.17.0.1 () {58 vars in 4418 bytes} [Sat Jun 18 10:18:19 2022] GET /admin/main/developer/ => generated 8451 bytes in 290 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 18/18] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:19 2022] GET /admin/jsi18n/ => generated 3195 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 19/19] 172.17.0.1 () {58 vars in 4428 bytes} [Sat Jun 18 10:18:27 2022] GET /admin/main/developer/30/change/ => generated 10287 bytes in 124 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 20/20] 172.17.0.1 () {54 vars in 4207 bytes} [Sat Jun 18 10:18:28 2022] GET /admin/jsi18n/ => generated 3195 bytes in 63 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 21/21] 172.17.0.1 () {58 vars in 4438 bytes} [Sat Jun 18 10:18:37 2022] GET /admin/main/developer/30/delete/ => generated 5528 bytes in 99 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 22/22] 172.17.0.1 () {66 vars in 4634 bytes} [Sat Jun 18 10:18:38 2022] POST /admin/main/developer/30/delete/ => generated 0 bytes in 35 msecs (HTTP/1.1 302) 10 headers in 586 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 23/23] 172.17.0.1 () {60 vars in 4663 bytes} [Sat Jun 18 10:18:39 2022] GET /admin/main/developer/ => generated 8400 bytes in 222 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 24/24] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:39 2022] GET /admin/jsi18n/ => generated 3195 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 25/25] 172.17.0.1 () {58 vars in 4428 bytes} [Sat Jun 18 10:18:41 2022] GET /admin/main/developer/20/change/ => generated 9749 bytes in 67 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 26/26] 172.17.0.1 () {54 vars in 4207 bytes} [Sat Jun 18 10:18:41 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 27/27] 172.17.0.1 () {58 vars in 4438 bytes} [Sat Jun 18 10:18:42 2022] GET /admin/main/developer/20/delete/ => generated 5519 bytes in 123 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 28/28] 172.17.0.1 () {66 vars in 4634 bytes} [Sat Jun 18 10:18:44 2022] POST /admin/main/developer/20/delete/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 10 headers in 579 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 29/29] 172.17.0.1 () {60 vars in 4656 bytes} [Sat Jun 18 10:18:44 2022] GET /admin/main/developer/ => generated 8179 bytes in 266 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 30/30] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:44 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 31/31] 172.17.0.1 () {58 vars in 4428 bytes} [Sat Jun 18 10:18:45 2022] GET /admin/main/developer/10/change/ => generated 10083 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 32/32] 172.17.0.1 () {54 vars in 4207 bytes} [Sat Jun 18 10:18:46 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 33/33] 172.17.0.1 () {58 vars in 4438 bytes} [Sat Jun 18 10:18:47 2022] GET /admin/main/developer/10/delete/ => generated 5531 bytes in 72 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 34/34] 172.17.0.1 () {66 vars in 4634 bytes} [Sat Jun 18 10:18:48 2022] POST /admin/main/developer/10/delete/ => generated 0 bytes in 105 msecs (HTTP/1.1 302) 10 headers in 585 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 35/35] 172.17.0.1 () {60 vars in 4662 bytes} [Sat Jun 18 10:18:48 2022] GET /admin/main/developer/ => generated 7961 bytes in 223 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 36/36] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:49 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 37/37] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:18:50 2022] GET /admin/main/developer/8/change/ => generated 7581 bytes in 141 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 38/38] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:18:50 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 39/39] 172.17.0.1 () {58 vars in 4435 bytes} [Sat Jun 18 10:18:51 2022] GET /admin/main/developer/8/delete/ => generated 5526 bytes in 36 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 40/40] 172.17.0.1 () {66 vars in 4631 bytes} [Sat Jun 18 10:18:52 2022] POST /admin/main/developer/8/delete/ => generated 0 bytes in 66 msecs (HTTP/1.1 302) 10 headers in 586 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 41/41] 172.17.0.1 () {60 vars in 4662 bytes} [Sat Jun 18 10:18:52 2022] GET /admin/main/developer/ => generated 7741 bytes in 247 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 42/42] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:53 2022] GET /admin/jsi18n/ => generated 3195 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 43/43] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:18:54 2022] GET /admin/main/developer/7/change/ => generated 7565 bytes in 144 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 44/44] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:18:54 2022] GET /admin/jsi18n/ => generated 3195 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 45/45] 172.17.0.1 () {58 vars in 4435 bytes} [Sat Jun 18 10:18:55 2022] GET /admin/main/developer/7/delete/ => generated 5517 bytes in 39 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 46/46] 172.17.0.1 () {66 vars in 4631 bytes} [Sat Jun 18 10:18:56 2022] POST /admin/main/developer/7/delete/ => generated 0 bytes in 100 msecs (HTTP/1.1 302) 10 headers in 579 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 47/47] 172.17.0.1 () {60 vars in 4655 bytes} [Sat Jun 18 10:18:56 2022] GET /admin/main/developer/ => generated 7522 bytes in 229 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 48/48] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:18:57 2022] GET /admin/jsi18n/ => generated 3195 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 49/49] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:18:58 2022] GET /admin/main/developer/6/change/ => generated 10283 bytes in 253 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 50/50] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:18:59 2022] GET /admin/jsi18n/ => generated 3195 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 51/51] 172.17.0.1 () {58 vars in 4435 bytes} [Sat Jun 18 10:19:00 2022] GET /admin/main/developer/6/delete/ => generated 5529 bytes in 84 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 52/52] 172.17.0.1 () {66 vars in 4631 bytes} [Sat Jun 18 10:19:02 2022] POST /admin/main/developer/6/delete/ => generated 0 bytes in 41 msecs (HTTP/1.1 302) 10 headers in 585 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 53/53] 172.17.0.1 () {60 vars in 4661 bytes} [Sat Jun 18 10:19:02 2022] GET /admin/main/developer/ => generated 7306 bytes in 241 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 54/54] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:19:03 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 55/55] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:19:05 2022] GET /admin/main/developer/3/change/ => generated 10285 bytes in 295 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 56/56] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:19:06 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 57/57] 172.17.0.1 () {58 vars in 4435 bytes} [Sat Jun 18 10:19:09 2022] GET /admin/main/developer/3/delete/ => generated 6361 bytes in 206 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 58/58] 172.17.0.1 () {58 vars in 4411 bytes} [Sat Jun 18 10:19:20 2022] GET /admin/main/choice/ => generated 11605 bytes in 332 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 59/59] 172.17.0.1 () {54 vars in 4194 bytes} [Sat Jun 18 10:19:20 2022] GET /admin/jsi18n/ => generated 3195 bytes in 68 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 60/60] 172.17.0.1 () {58 vars in 4419 bytes} [Sat Jun 18 10:19:24 2022] GET /admin/main/choice/19/change/ => generated 9851 bytes in 214 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 61/61] 172.17.0.1 () {54 vars in 4204 bytes} [Sat Jun 18 10:19:24 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 62/62] 172.17.0.1 () {58 vars in 4415 bytes} [Sat Jun 18 10:19:27 2022] GET /admin/main/developer/ => generated 7135 bytes in 222 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 63/63] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:19:28 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 64/64] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:19:29 2022] GET /admin/main/developer/2/change/ => generated 9747 bytes in 135 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 65/65] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:19:30 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 66/66] 172.17.0.1 () {58 vars in 4417 bytes} [Sat Jun 18 10:19:33 2022] GET /admin/main/developer/ => generated 7135 bytes in 171 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 67/67] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:19:34 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 68/68] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:19:35 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 207 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 69/69] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:19:35 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 70/70] 172.17.0.1 () {58 vars in 4435 bytes} [Sat Jun 18 10:19:38 2022] GET /admin/main/developer/1/delete/ => generated 6302 bytes in 121 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 71/71] 172.17.0.1 () {58 vars in 4417 bytes} [Sat Jun 18 10:19:42 2022] GET /admin/main/developer/ => generated 7135 bytes in 211 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 72/72] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:19:42 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 73/73] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:19:46 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 184 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 74/74] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:19:46 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 75/75] 172.17.0.1 () {58 vars in 4417 bytes} [Sat Jun 18 10:21:42 2022] GET /admin/main/developer/ => generated 7135 bytes in 136 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 76/76] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:21:43 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 77/77] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:21:44 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 80 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 78/78] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:21:44 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+Not Found: /1
+[pid: 575|app: 0|req: 79/79] 172.17.0.1 () {56 vars in 4288 bytes} [Sat Jun 18 10:21:53 2022] GET /1 => generated 2779 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Internal Server Error: /result/1
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 80/80] 172.17.0.1 () {56 vars in 4302 bytes} [Sat Jun 18 10:21:59 2022] GET /result/1 => generated 162169 bytes in 493 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 81/81] 172.17.0.1 () {58 vars in 4368 bytes} [Sat Jun 18 10:23:04 2022] GET /admin/ => generated 7574 bytes in 41 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 82/82] 172.17.0.1 () {56 vars in 4344 bytes} [Sat Jun 18 10:23:04 2022] GET /admin/ => generated 7574 bytes in 55 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 83/83] 172.17.0.1 () {58 vars in 4439 bytes} [Sat Jun 18 10:23:07 2022] GET /admin/main/developer/ => generated 7135 bytes in 191 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 84/84] 172.17.0.1 () {54 vars in 4243 bytes} [Sat Jun 18 10:23:08 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 85/85] 172.17.0.1 () {58 vars in 4472 bytes} [Sat Jun 18 10:23:10 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 163 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 86/86] 172.17.0.1 () {54 vars in 4252 bytes} [Sat Jun 18 10:23:11 2022] GET /admin/jsi18n/ => generated 3195 bytes in 102 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 87/87] 172.17.0.1 () {60 vars in 4457 bytes} [Sat Jun 18 10:23:32 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 283 msecs (HTTP/1.1 200) 9 headers in 462 bytes (2 switches on core 0)
+[pid: 575|app: 0|req: 88/88] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:23:32 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 89/89] 172.17.0.1 () {58 vars in 4417 bytes} [Sat Jun 18 10:23:36 2022] GET /admin/main/developer/ => generated 7135 bytes in 141 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 90/90] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:23:37 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 91/91] 172.17.0.1 () {58 vars in 4426 bytes} [Sat Jun 18 10:24:07 2022] GET /admin/main/developer/1/change/ => generated 10081 bytes in 184 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 92/92] 172.17.0.1 () {54 vars in 4206 bytes} [Sat Jun 18 10:24:08 2022] GET /admin/jsi18n/ => generated 3195 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 93/93] 172.17.0.1 () {66 vars in 4635 bytes} [Sat Jun 18 10:24:31 2022] POST /admin/main/developer/1/change/ => generated 0 bytes in 149 msecs (HTTP/1.1 302) 10 headers in 627 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 94/94] 172.17.0.1 () {60 vars in 4703 bytes} [Sat Jun 18 10:24:31 2022] GET /admin/main/developer/ => generated 7352 bytes in 168 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 575|app: 0|req: 95/95] 172.17.0.1 () {54 vars in 4197 bytes} [Sat Jun 18 10:24:31 2022] GET /admin/jsi18n/ => generated 3195 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+Not Found: /result
+[pid: 575|app: 0|req: 96/96] 172.17.0.1 () {56 vars in 4298 bytes} [Sat Jun 18 10:24:38 2022] GET /result => generated 2794 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /result
+[pid: 575|app: 0|req: 97/97] 172.17.0.1 () {58 vars in 4329 bytes} [Sat Jun 18 10:24:45 2022] GET /result => generated 2794 bytes in 10 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Internal Server Error: /result/1
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 98/98] 172.17.0.1 () {56 vars in 4302 bytes} [Sat Jun 18 10:24:48 2022] GET /result/1 => generated 162169 bytes in 394 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /result/1
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 99/99] 172.17.0.1 () {58 vars in 4333 bytes} [Sat Jun 18 10:28:14 2022] GET /result/1 => generated 162884 bytes in 348 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /result/1
+Traceback (most recent call last):
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./main/views.py", line 61, in result
+    return render(request, 'main/result.html', context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/workspace/mbittest/venv/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'all_results' not found. 'all_results' is not a valid view function or pattern name.
+[pid: 575|app: 0|req: 100/100] 172.17.0.1 () {58 vars in 4379 bytes} [Sat Jun 18 10:29:26 2022] GET /result/1 => generated 163224 bytes in 498 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Sat Jun 18 10:29:36 2022] ***
+compiled with version: 7.5.0 on 29 May 2022 17:23:40
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/venv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/venv/
+Set PythonHome to /workspace/mbittest/venv/
+Python main interpreter initialized at 0x555839130140
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 154032 bytes (150 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x555839130140 pid: 1038 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1038)
+spawned uWSGI worker 1 (pid: 1041, cores: 1)
+subprocess 1039 exited with code 0
+[pid: 1041|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 4378 bytes} [Sat Jun 18 10:29:42 2022] GET / => generated 1354 bytes in 179 msecs (HTTP/1.1 200) 5 headers in 167 bytes (2 switches on core 0)
+[pid: 1041|app: 0|req: 2/2] 172.17.0.1 () {56 vars in 4348 bytes} [Sat Jun 18 10:29:47 2022] GET /result/1 => generated 8192 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 4302 bytes} [Sat Jun 18 10:29:55 2022] GET /result/2 => generated 7876 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 4/4] 172.17.0.1 () {56 vars in 4286 bytes} [Sat Jun 18 10:30:05 2022] GET / => generated 1354 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 5/5] 172.17.0.1 () {58 vars in 4355 bytes} [Sat Jun 18 10:30:07 2022] GET /form/ => generated 16440 bytes in 216 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 6/6] 172.17.0.1 () {66 vars in 4562 bytes} [Sat Jun 18 10:30:23 2022] POST /submit/ => generated 0 bytes in 38 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 7/7] 172.17.0.1 () {60 vars in 4397 bytes} [Sat Jun 18 10:30:23 2022] GET /result/3 => generated 8382 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 8/8] 172.17.0.1 () {58 vars in 4353 bytes} [Sat Jun 18 10:30:39 2022] GET / => generated 1354 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 9/9] 172.17.0.1 () {58 vars in 4355 bytes} [Sat Jun 18 10:30:41 2022] GET /form/ => generated 16440 bytes in 469 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 10/10] 172.17.0.1 () {66 vars in 4562 bytes} [Sat Jun 18 10:30:59 2022] POST /submit/ => generated 0 bytes in 105 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 1041|app: 0|req: 11/11] 172.17.0.1 () {60 vars in 4397 bytes} [Sat Jun 18 10:30:59 2022] GET /result/2 => generated 7876 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
