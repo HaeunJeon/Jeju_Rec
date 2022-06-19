@@ -37,11 +37,6 @@ def submit(request):
         
     #최고점 개발 유형
     best_developer_id = max(range(1, K+1), key=lambda id : counter[id]) #최대값 
-    # counter[best_developer_id]=0
-    # best_developer_id2 = max(range(1, K+1), key=lambda id : counter[id]) #그다음최대값 
-    # if counter[best_developer_id2] == 0:#0인데도 맥스가 됐으면 초기화 0으로 
-    #     best_developer_id2 = 0
-    # best_developer = Developer.objects.get(pk= best_developer_id*10 + best_developer_id2)전하 수정부분
     best_developer = Developer.objects.get(pk= best_developer_id)
     best_developer.count += 1
     best_developer.save()
@@ -51,7 +46,6 @@ def submit(request):
         'counter' : counter
     }
     return redirect('main:result', developer_id=best_developer_id)
-    #return render(request, 'result.html', context)
 
 def result(request, developer_id):
     developer = Developer.objects.get(pk=developer_id)
